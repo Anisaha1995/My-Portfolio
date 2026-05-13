@@ -10,3 +10,6 @@ with col2:
     Electrical and Electronic Engineering from KUET,Bangladesh. I work on DESCO as
     an Assistant Engineer.'''
     st.info(content)
+
+content2= '''Feel free to contact with me if anything you want to ask me. I will answer.'''
+st.write(content2)
