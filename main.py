@@ -14,11 +14,17 @@ with col2:
 content2= '''Feel free to contact with me if anything you want to ask me. I will answer.'''
 st.write(content2)
 df = pandas.read_csv("008 data.csv", sep = ";")
-col3,col4 = st.columns(2)
+col3,empty_col,col4 = st.columns([1.5,0.5,1.5])
 with col3:
     for index,row in df[:10].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("Image/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
 
 with col4:
     for index,row in df[10:].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("Image/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
