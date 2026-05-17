@@ -16,3 +16,13 @@ From {user_email}
     if button:
         send_email(message)
         st.info("You message has been sent successfully.")
+
+st.header("Connect with me")
+st.markdown(
+    """
+    <a href="https://www.linkedin.com/in/piyas-saha-b25830171/" target="_blank">
+        <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/lk.png" width="120">
+    </a>
+    """,
+    unsafe_allow_html=True
+)
