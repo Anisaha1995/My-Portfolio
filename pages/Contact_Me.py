@@ -18,11 +18,10 @@ From {user_email}
         st.info("You message has been sent successfully.")
 
 st.header("Connect with me")
-st.markdown(
-    """
-    <a href="https://www.linkedin.com/in/piyas-saha-b25830171/" target="_blank">
-        <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/lk.png" width="120">
-    </a>
-    """,
-    unsafe_allow_html=True
-)
+cola,colb = st.columns([1,4],gap="small")
+with cola:
+    st.image("lk.png",width=50)
+    st.write(f"[Click Here](https://www.linkedin.com/in/piyas-saha-b25830171/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQP%2BOqfMhQXKgfyYeivzMkw%3D%3D)")
+with colb:
+    st.image("gs.png",width=50)
+    st.write(f"[Click Here](https://scholar.google.com/citations?user=gxWV3REAAAAJ&hl=en)")
